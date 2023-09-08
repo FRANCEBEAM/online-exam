@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --bg: #3A1078;
+    --formBg: #222831;
+    --btnColor: #2F58CD;
+    --inputColor: #2F58CD;
+    --fadeWhite: #C0C0C0;
+    --bgWhite: #EEEEEE;
+    --blackColor: #222831;
+    --font: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    font-family: var(--font);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+
+.search-wrapper {
+    background: var(--formBg);
+    max-width: 450px;
+    height: 100%;
+    margin: 4em auto;
+    padding: 2em;
+    border-radius: 11px;
+}
+
+h1.content {
+    text-align: center;
+    color: var(--bgWhite);
+}
+
+
+form {
+    /* padding-top: 34px; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    border-radius: 122px;
+}
+
+input.input-search {
+    padding: 12px;
+    width: 100%;
+    background: none;
+    border: 2px solid var(--inputColor);
+    color: var(--bgWhite);
+}
+
+button.btn-search {
+    font-family: var(--font);
+    font-weight: bold;
+    color: var(--bgWhite);
+    width: 150px;
+    background: var(--btnColor);
+    border: none;
+}
+
+
+/* country card */
+
+ul {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    margin-top: 2em;
+    gap: 1em;
+}
+li.card-country {
+  /* margin-top: 2em; */
+  
+  background: white;
+  width: 500px;
+  border-radius: 6px;
+    
+  align-items: center;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+div.card-img img {
+   width: 60px;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.loading-message{
+    color: var(--bgWhite);
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+
+    --detailsBg: #222831;
+    --formBg: #222831;
+    --btnColor: #2F58CD;
+    --inputColor: #2F58CD;
+    --fadeWhite: #C0C0C0;
+    --bgWhite: #EEEEEE;
+    --blackColor: #222831;
+    --font: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.details-container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding-top: 4em;
+    font-family: var(--font);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: var(--bgWhite);
+}
+
+p.flag-alt {
+    padding-top: 4em;
+}
+
+div.flag-ptc {
+    padding-top: 4em;
+}
