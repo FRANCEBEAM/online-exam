@@ -1,20 +1,19 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import SearchWrapper from './components/SearchWrapper';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
 import FlagDetails from './components/FlagDetails';
-
+import Edit from './components/Edit';
 
 
 function App() {
- 
+
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<SearchWrapper />} />
-          <Route path="/details/:id" element={<FlagDetails />} />
-        </Routes>
-      </Router>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/details/:id' element={<FlagDetails />} />
+        <Route path='/edit/:id' element={<Edit />} />
+      </Routes>
+    </BrowserRouter>     
   )
 }
 
